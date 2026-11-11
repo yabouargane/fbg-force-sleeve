@@ -1,0 +1,62 @@
+{
+  "sleeve_watertight": true,
+  "sleeve_volume_mm3": 1542.5,
+  "sleeve_bounds_mm": [
+    [
+      -4.6,
+      -4.6,
+      0.0
+    ],
+    [
+      8.6,
+      4.6,
+      30.0
+    ]
+  ],
+  "sleeve_bodies": 1,
+  "overlaps": {
+    "strained_1_vs_sleeve_mm3": 0.0,
+    "strained_2_vs_sleeve_mm3": 0.0,
+    "strained_3_vs_sleeve_mm3": 0.0,
+    "reference_capillary_vs_sleeve_mm3": 0.0,
+    "sleeve_vs_shaft_mm3": 0.0
+  },
+  "min_wall_under_strained_grooves_mm": 1.5,
+  "min_wall_under_reference_groove_mm": 1.2,
+  "adhesive_window_count": 6,
+  "bond_point_spacing_mm": 14.0,
+  "body_outer_diameter_mm": 9.2,
+  "max_width_with_tabs_mm": 13.2,
+  "inner_diameter_mm": 5.2,
+  "outer_diameter_mm": 9.2,
+  "parameters": {
+    "shaft_d": 5.0,
+    "clearance": 0.2,
+    "wall": 2.0,
+    "length": 30.0,
+    "slit_w": 1.0,
+    "fiber_d": 0.25,
+    "groove_w": 0.6,
+    "groove_d": 0.5,
+    "ref_groove_w": 0.9,
+    "ref_groove_d": 0.8,
+    "capillary_d": 0.6,
+    "window_len": 4.0,
+    "window_w": 1.5,
+    "window_dz": 7.0,
+    "sim_port_id": 5.5,
+    "tab_len": 4.0,
+    "tab_t": 3.0,
+    "tab_z": 14.0,
+    "screw_hole_d": 2.2,
+    "strained_deg": [
+      60.0,
+      180.0,
+      300.0
+    ],
+    "ref_deg": 120.0,
+    "shaft_len": 80.0,
+    "fiber_extra": 15.0,
+    "sections": 96
+  }
+}

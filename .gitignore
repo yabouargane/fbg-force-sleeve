@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+cadenv/
+*.egg-info/
+.DS_Store
+Thumbs.db
+calibration_result.json

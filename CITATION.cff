@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below. It is a simulation study; no sensor has been built or tested."
+title: "fbg-force-sleeve: an open design study for a clip-on fiber Bragg grating force-sensing sleeve"
+type: software
+authors:
+  - family-names: "Bouargane"
+    given-names: "Yassine"
+date-released: "2026-11-11"
+license: MIT
+repository-code: "https://github.com/yabouargane/fbg-force-sleeve"
+keywords:
+  - fiber Bragg grating
+  - laparoscopy
+  - force sensing
+  - temperature compensation
+  - open hardware
+abstract: "A simulation and 3D design study of a clip-on sleeve with four optical fibers (three strained, one strain-free reference) that could measure the lateral force on the shaft of a manual laparoscopic instrument and separate it from heat. Research use only. Not a medical device."

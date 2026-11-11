@@ -1,0 +1,11 @@
+item,description,quantity,supplier,quoted_unit_price,currency,quote_date,notes
+fbg_array,"Fiber Bragg gratings (bought, not written in-house)",,,,,,"TODO: wavelengths, reflectivity and packaging"
+light_source,"Broadband source for the interrogation",,,,,,
+coupler_or_circulator,"Optical coupler or circulator",,,,,,
+edge_filter,"Optical edge filter (or alternative interrogation method)",,,,,,
+photodiode,"Photodiode(s) and amplifier",,,,,,
+adc,"High-resolution analog-to-digital converter",,,,,,"TODO: noise floor to be measured"
+microcontroller,"Arduino or Teensy",,,,,,
+sleeve_print,"3D-printed sleeve (material and printer cost)",,,,,,No sterilisation claim
+adhesive,"Fiber bonding adhesive",,,,,,
+reference_load_cell,"Reference load cell used for calibration (test equipment)",,,,,,Not part of the sensor cost
