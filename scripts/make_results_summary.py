@@ -54,6 +54,15 @@ for key, label, p, nf, grad, amp_max, ref, cal, nl_lin, nl_pol, cond in rows:
     out.append(f"| `{key}` | {f(grad, 3)} N ({f(grad*GF, 0)} g) | {f(amp_max, 2)} °C | {f(ref, 1)} N | {f(min(cal['Fx'], cal['Fy']), 3)} to {f(max(cal['Fx'], cal['Fy']), 3)} N | {f(nl_lin, 3)} N to {f(nl_pol, 3)} N |")
 out.append("")
 out.append("**Amplitude of uneven heating.** Each strained fiber sees the mean temperature rise plus `amp * cos(theta - phi)`. The warmest side is therefore `amp` above the mean, and the temperature difference between the warmest and the coolest side is `2 * amp`. The reference fiber is assumed to see the mean.\n")
+out.append("## Effect of the reference (thermometer) fiber: temperature step, with and without separation\n")
+out.append("| Scenario | Axial force error, temperature ignored | Axial force error, separated | Lateral force error, temperature ignored | Lateral force error, separated | Temperature error, separated |")
+out.append("|---|---|---|---|---|---|")
+for key, label in order:
+    ts = R[key]["temperature_step"]
+    ign, dec = ts["rmse_N_ignoring_temperature"], ts["rmse_N_decoupled"]
+    out.append(f"| `{key}` | {f(ign['Fz'], 1)} N | {f(dec['Fz'], 2)} N | {f(ign['Fx'], 4)} N | {f(dec['Fx'], 4)} N | {f(ts['rmse_C_dT_decoupled'], 2)} °C |")
+out.append("")
+out.append("Root-mean-square errors over a 10 s run with a 15 °C temperature step. The reference fiber removes the heat from the **axial** force and gives the temperature. The **lateral** error is the same with and without it: uniform heating already cancels among three strained fibers placed 120 degrees apart. The reference fiber does not correct uneven heating across the section.\n")
 out.append("## Assumptions behind these numbers\n")
 out.append("- 5 mm steel tube, 0.5 mm wall, lever arm 100 mm (assumed; beam theory with E = 196 GPa, 1.2 pm per microstrain).")
 out.append("- Fiber bonded to steel: about 30 pm/°C (an estimate from the expansion of steel; no direct measurement found). Free reference fiber: 11.5 pm/°C.")

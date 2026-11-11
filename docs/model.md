@@ -33,7 +33,7 @@ This is a one-standard-deviation noise floor, not a guaranteed resolution. A Mon
 
 ## 4. Experiments (`scripts/run_simulation.py`)
 
-1. **Temperature step:** force estimate with and without separating temperature.
+1. **Temperature step:** force estimate with and without separating temperature. Result: the axial error falls from hundreds of newtons to the noise, and the temperature is recovered; the lateral estimate is unchanged, because uniform heating already cancels among three strained fibers 120 degrees apart. So the reference fiber is justified for the axial channel and the temperature, not for the lateral force under uniform heating, and it does not correct uneven heating.
 2. **Noise floor:** force noise after decoupling, for several wavelength noise values.
 3. **Calibration error:** the estimate uses a `K` whose coefficients are off by 0, 1, 2, 5 or 10 %.
 4. **Reference fiber offset:** the reference sees a temperature that is 0 to a few degrees away from the rest. The axial channel absorbs it (`k_T_bonded / k_A` newtons per degree), the lateral channels stay clean.

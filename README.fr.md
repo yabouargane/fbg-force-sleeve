@@ -11,7 +11,7 @@ English: [README.md](README.md)
 
 - Un réseau de Bragg (FBG) est un motif gravé dans une fibre optique, qui renvoie une couleur précise. La couleur change quand la fibre s'étire, et aussi quand elle chauffe.
 - Trois fibres sont collées sur la tige, à 120° les unes des autres : elles sentent la flexion et la chaleur. Une quatrième repose librement contre la tige et ne sent que la chaleur : c'est le thermomètre.
-- Quatre lectures donnent quatre inconnues : la force dans deux directions latérales, la force le long de la tige, et la température. Sans la fibre-thermomètre, la matrice perd un rang et le code refuse de calculer.
+- Quatre lectures donnent quatre inconnues : la force dans deux directions latérales, la force le long de la tige, et la température. Sans la fibre-thermomètre, la matrice perd un rang et le code refuse de calculer. Dans la simulation, elle sépare la chaleur de la force axiale et donne la température ; pour la force latérale, une chaleur uniforme s'annule déjà grâce aux trois fibres à 120°, et la chauffe inégale n'est pas corrigée par la fibre-thermomètre.
 - Le manchon est une pince imprimée en 3D qui tient les fibres contre la tige. Il ne mesure rien lui-même. Les fibres sortent du manchon en un câble fin vers un appareil de lecture.
 
 ## Ce que montre la simulation (tige de 5 mm, paramètres supposés)

@@ -11,7 +11,7 @@ Français : [README.fr.md](README.fr.md)
 
 - A fiber Bragg grating (FBG) is a pattern in an optical fiber that reflects one color. The color shifts when the fiber stretches and also when it warms.
 - Three fibers are glued on the shaft, 120° apart. They feel bending and heat. A fourth fiber lies loose against the shaft and feels heat only: it is the thermometer.
-- Four readings give four unknowns: the force in two lateral directions, the force along the shaft, and the temperature. Without the thermometer fiber, the matrix loses one rank and the code refuses to solve it.
+- Four readings give four unknowns: the force in two lateral directions, the force along the shaft, and the temperature. Without the thermometer fiber, the matrix loses one rank and the code refuses to solve it. In the simulation, the thermometer fiber separates heat from the axial force and gives the temperature; for the lateral force, uniform heat already cancels because the three strained fibers sit 120° apart, and uneven heating is not corrected by the thermometer fiber.
 - The sleeve is a 3D-printed clip that holds the fibers against the shaft. It measures nothing itself. The fibers leave the sleeve as a thin cable to a readout instrument.
 
 ## What the simulation shows (5 mm shaft, assumed parameters)

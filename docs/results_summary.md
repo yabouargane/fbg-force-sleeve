@@ -24,6 +24,17 @@ Target used in the articles: 0.375 N (38 g), 12.5 % of a 3 N range in a publishe
 
 **Amplitude of uneven heating.** Each strained fiber sees the mean temperature rise plus `amp * cos(theta - phi)`. The warmest side is therefore `amp` above the mean, and the temperature difference between the warmest and the coolest side is `2 * amp`. The reference fiber is assumed to see the mean.
 
+## Effect of the reference (thermometer) fiber: temperature step, with and without separation
+
+| Scenario | Axial force error, temperature ignored | Axial force error, separated | Lateral force error, temperature ignored | Lateral force error, separated | Temperature error, separated |
+|---|---|---|---|---|---|
+| `tube8_baseline` | 620.3 N | 5.70 N | 0.0507 N | 0.0507 N | 0.09 °C |
+| `tube5_beam_assumed` | 356.5 N | 3.27 N | 0.0094 N | 0.0094 N | 0.09 °C |
+| `tube5_lowcost_readout` | 356.4 N | 9.82 N | 0.0283 N | 0.0283 N | 0.28 °C |
+| `flexure_x10_assumed` | 35.6 N | 0.98 N | 0.0028 N | 0.0028 N | 0.28 °C |
+
+Root-mean-square errors over a 10 s run with a 15 °C temperature step. The reference fiber removes the heat from the **axial** force and gives the temperature. The **lateral** error is the same with and without it: uniform heating already cancels among three strained fibers placed 120 degrees apart. The reference fiber does not correct uneven heating across the section.
+
 ## Assumptions behind these numbers
 
 - 5 mm steel tube, 0.5 mm wall, lever arm 100 mm (assumed; beam theory with E = 196 GPa, 1.2 pm per microstrain).
