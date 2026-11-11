@@ -6,7 +6,7 @@ This is a design study with no hardware validation yet. The most useful contribu
 
 1. **Bench data.** Any of the seven tests in `docs/test_plan.md`, even a partial one. Results that contradict the model are the most valuable.
 2. **Critique of the assumptions.** Read `docs/model.md` and tell me which assumption is wrong and why, with a source if you have one. The 30 pm/°C thermal response of a bonded fiber and the 1 pm readout noise have no measurement behind them.
-3. **Prior art and claims.** Missing papers, products or patents. In particular the claims of the patent family on separable force-sensing shaft modules, which I have not read.
+3. **Prior art and claims.** Missing papers, products or patents. In particular the claims of the patent family on ribbed force sensors built into the shaft, which have not been read.
 4. **Bugs** in `src/` or `hardware/generate_sleeve.py`, with the smallest input that shows them.
 5. **Reviews of the 3D model.** It has never been printed.
 

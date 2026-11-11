@@ -58,7 +58,7 @@ Si vous pouvez faire l'un de ces essais, voyez [CONTRIBUTING.md](CONTRIBUTING.md
 
 ## Brevets et sécurité
 
-- Une famille de brevets existe sur les modules détachables de mesure de force sur une tige (par exemple US 9 952 107). **Je n'en ai pas lu les revendications.** Lisez-les avant de construire ou de redistribuer des dérivés. Ce n'est pas un avis juridique.
+- Une famille de brevets existe sur des capteurs de force à nervures intégrés à la tige d'un instrument comme modules fabriqués séparément (par exemple US 9 952 107). **Ses revendications n'ont pas été lues.** Lisez-les avant de construire ou de redistribuer des dérivés. Ce n'est pas un avis juridique.
 - Le dessin ne revendique ni stérilité ni usage médical. Rien n'est validé pour des patients.
 
 ## Comment ce dépôt a été produit

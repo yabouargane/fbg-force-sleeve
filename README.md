@@ -92,7 +92,7 @@ If you can run any of these, see [CONTRIBUTING.md](CONTRIBUTING.md). A negative 
 
 ## Patents and safety
 
-- A patent family on separable force-sensing shaft modules exists (for example US 9,952,107). **I have not read its claims.** Read them before building or redistributing derivatives. This is not legal advice.
+- A patent family on ribbed force sensors built into an instrument shaft as separately manufactured modules exists (for example US 9,952,107). **Its claims have not been read.** Read them before building or redistributing derivatives. This is not legal advice.
 - The design claims no sterility and no medical use. Nothing here is validated for patients.
 
 ## How this repository was made
